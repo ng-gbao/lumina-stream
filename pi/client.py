@@ -14,7 +14,7 @@ import video_pb2_grpc
 # CONFIG
 # ==========================
 
-SERVER_IP = "192.168.1.xxx"      # <-- IP PC
+SERVER_IP = "192.168.1.11"      # <-- IP PC
 SERVER_PORT = 50051
 
 WIDTH = 640
