@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package lumina;
+
+message VideoChunk {
+    bytes data = 1;
+}
+
+message StreamResult {
+    bool success = 1;
+    string message = 2;
+}
+
+service VideoStreamer {
+    rpc Stream(stream VideoChunk) returns (StreamResult);
+}
